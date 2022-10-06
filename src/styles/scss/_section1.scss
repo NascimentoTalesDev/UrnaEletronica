@@ -1,0 +1,42 @@
+.section-1{
+    width: 95%;
+    height: 90%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    .tela{
+        height: 100%;
+        width: 50%;
+        background-color: blue;
+    }
+    .choice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        width: 50%;
+        .numbers{
+            background-color: rebeccapurple;
+            width: 80%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            .num{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                border: 1px solid ;
+                padding: 2rem;
+                font-size: 4rem;  
+                align-items: center;
+            }
+            .nada{
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+}
