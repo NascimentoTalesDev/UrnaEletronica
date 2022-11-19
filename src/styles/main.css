@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+* button {
+  border: none;
 }
 
 html {
@@ -10,7 +14,8 @@ html {
 }
 
 body {
-  background-color: red;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(84, 84, 84) 100%);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -18,54 +23,158 @@ body {
   align-items: center;
 }
 body .container {
-  background-color: gray;
-  width: 90%;
+  background-color: rgb(206, 206, 206);
+  width: 80%;
   margin: auto;
-  height: 90%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .section-1 {
   width: 95%;
   height: 90%;
-  background-color: antiquewhite;
+  background-color: rgb(206, 206, 206);
   display: flex;
   flex-direction: row;
 }
 .section-1 .tela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  width: 50%;
-  background-color: blue;
+  width: 70%;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 40px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.section-1 .tela img {
+  width: 100%;
+}
+.section-1 .tela .img {
+  width: 200px;
+}
+.section-1 .tela .digitado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+.section-1 .tela .digitado .titulo {
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+.section-1 .tela .digitado .numeros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-1 .tela .digitado .numeros .dig {
+  font-size: 8rem;
+  border: 3px solid black;
+  padding: 1rem;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-1 .choice {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+  padding-bottom: 50px;
+}
+.section-1 .choice .dir {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(184, 184, 184);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: brown;
-  width: 50%;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+}
+.section-1 .choice .dir img {
+  width: 80px;
+}
+.section-1 .choice .dir .h2 {
+  font-size: 3rem;
+  margin-left: 4rem;
 }
 .section-1 .choice .numbers {
-  background-color: rebeccapurple;
-  width: 80%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
   padding: 0.5rem;
+  width: 70%;
+  margin-top: 10px;
 }
 .section-1 .choice .numbers .num {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: rgb(18, 18, 18);
   border: 1px solid;
-  padding: 2rem;
-  font-size: 4rem;
+  padding: 1.5rem;
+  font-size: 3rem;
   align-items: center;
+  color: aliceblue;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0), 2px 1px 2px white, 2px 1px 2px white, 2px 1px 2px white;
+}
+.section-1 .choice .numbers .num:active {
+  transform: scale(0.95);
 }
 .section-1 .choice .numbers .nada {
   background-color: transparent;
   border: none;
+  box-shadow: none;
+}
+.section-1 .choice .escolher {
+  height: 20%;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-1 .choice .escolher .btn {
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0.5rem;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0), 2px 1px 2px white, 2px 1px 2px white, 2px 1px 2px white;
+}
+.section-1 .choice .escolher .btn:active {
+  transform: scale(0.95);
+}
+.section-1 .choice .escolher #b {
+  height: 60%;
+  width: 25%;
+  background-color: aliceblue;
+}
+.section-1 .choice .escolher #c {
+  height: 60%;
+  width: 32%;
+  background-color: yellow;
+}
+.section-1 .choice .escolher #v {
+  height: 80%;
+  background-color: green;
 }/*# sourceMappingURL=main.css.map */
