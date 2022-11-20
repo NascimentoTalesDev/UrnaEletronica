@@ -85,6 +85,34 @@ body .container {
   justify-content: center;
   align-items: center;
 }
+.section-1 .tela .candidato {
+  display: none;
+  flex-direction: row;
+  margin-left: 30px;
+  align-items: center;
+  width: 100%;
+}
+.section-1 .tela .candidato .imagem {
+  width: 150px;
+}
+.section-1 .tela .candidato img {
+  width: 100%;
+}
+.section-1 .tela .candidato .info {
+  margin-left: 20px;
+}
+.section-1 .tela .candidato .info h2 {
+  font-size: 3rem;
+}
+.section-1 .tela .candidato .info h4 {
+  font-size: 1.5rem;
+}
+.section-1 .tela .candidato .info .span {
+  font-size: 3rem;
+}
+.section-1 .tela .candidato .info .p {
+  font-size: 1rem;
+}
 .section-1 .choice {
   display: flex;
   flex-direction: column;
